@@ -19,8 +19,8 @@ export async function saveNotes(notes) {
     await writeFile(filePath, json, 'utf-8');
 }
 
-export async function addNotes(note) {
+export async function addNote(note) {
     const notes = await getAllNotes();
     notes.push(note);
-    saveNotes(notes);
+    await saveNotes(notes);
 }
