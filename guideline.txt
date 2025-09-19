@@ -1,0 +1,44 @@
+📝 Note-Taking App (CLI Version)
+
+🎯 Goal
+
+A CLI app where you can:
+	•	Add notes (with title, body, optional tags)
+	•	View all notes
+	•	Search/filter notes by keyword or tag
+	•	Delete notes
+	•	(Optional) Archive notes
+
+⸻
+
+🛠 Core Features
+	1.	Add Note
+	•	Ask for title, body, tags (comma-separated).
+	•	Store as an object: { id, title, body, tags }.
+	•	Save to JSON file (async/await).
+	2.	List Notes
+	•	Display all notes with title + snippet of body.
+	3.	Search Notes
+	•	Filter by keyword (in title or body).
+	•	Filter by tag (exact match).
+	4.	Delete Note
+	•	Ask for note ID and remove it.
+
+⸻
+
+🌱 Stretch Features (Optional later)
+	•	Archive/Unarchive notes (status flag).
+	•	Sort notes (by title or creation date).
+	•	Export notes to text/CSV.
+
+    note-app-cli/
+├── api/
+│   └── noteApi.js        # read/write notes from JSON file
+├── models/
+│   └── Note.js           # Note class with methods
+├── data/
+│   └── notes.json        # storage
+├── cliHelpers/
+│   └── noteCli.js        # CLI functions (add, list, search)
+├── main.js               # entry point / menu
+
