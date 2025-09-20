@@ -1,3 +1,5 @@
+// Note Class
+
 class Note {
     constructor(id, title, body, tags = [], createdAt = new Date()) {
         this.id = id;
@@ -25,7 +27,6 @@ class Note {
     static parse(obj) {
         return new Note(obj.id, obj.title, obj.body, obj.tags, obj.createdAt);
     }
-
 }
 
 export default Note;

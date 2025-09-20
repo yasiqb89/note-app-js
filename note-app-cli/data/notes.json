@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "id": 1,
+    "title": "My first note",
+    "body": "hello my name is yassir ",
+    "tags": [
+      "name",
+      " hello"
+    ],
+    "createdAt": "2025-09-19T20:51:21.018Z"
+  }
+]
