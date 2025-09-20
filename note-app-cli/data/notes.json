@@ -8,5 +8,15 @@
       " hello"
     ],
     "createdAt": "2025-09-19T20:51:21.018Z"
+  },
+  {
+    "id": 1,
+    "title": "Dota",
+    "body": "This is a game for steam",
+    "tags": [
+      "game",
+      " moba"
+    ],
+    "createdAt": "2025-09-20T14:43:01.156Z"
   }
 ]

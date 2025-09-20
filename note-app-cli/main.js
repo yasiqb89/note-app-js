@@ -1,4 +1,4 @@
-import { askQuestion, createNote } from './cli/cliHelper.js';
+import { askQuestion, createNote, closePrompt } from './cli/cliHelper.js';
 
 
 async function showMenu() {
@@ -34,7 +34,7 @@ async function showMenu() {
             break;
         case '7':
             console.log('Goodbye!');
-            rl.close();
+            closePrompt();
             return;
         default:
             console.log('Invalid option. Try again.');

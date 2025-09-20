@@ -1,4 +1,6 @@
 import { readFile, writeFile } from 'fs/promises';
+import Note from '../models/Note.js';
+
 
 const filePath = new URL('../data/notes.json', import.meta.url);
 
