@@ -10,13 +10,76 @@
     "createdAt": "2025-09-19T20:51:21.018Z"
   },
   {
-    "id": 1,
+    "id": 2,
     "title": "Dota",
-    "body": "This is a game for steam",
+    "body": "This is a game ",
     "tags": [
       "game",
-      " moba"
+      " dota"
     ],
-    "createdAt": "2025-09-20T14:43:01.156Z"
+    "createdAt": "2025-09-20T15:13:42.271Z"
+  },
+  {
+    "id": 3,
+    "title": "Overwatch",
+    "body": "Game on steam",
+    "tags": [
+      "ow"
+    ],
+    "createdAt": "2025-09-20T15:13:58.194Z"
+  },
+  {
+    "id": 4,
+    "title": "Football",
+    "body": "liverpool is a good team",
+    "tags": [
+      "team"
+    ],
+    "createdAt": "2025-09-20T15:14:29.550Z"
+  },
+  {
+    "id": 5,
+    "title": "Car Company",
+    "body": "this is a car company",
+    "tags": [
+      "company"
+    ],
+    "createdAt": "2025-09-20T16:02:44.899Z"
+  },
+  {
+    "id": 6,
+    "title": "Joji is abc",
+    "body": "apex legends",
+    "tags": [
+      "abc"
+    ],
+    "createdAt": "2025-09-20T21:00:57.084Z"
+  },
+  {
+    "id": 7,
+    "title": "asdv",
+    "body": "abab",
+    "tags": [
+      "a"
+    ],
+    "createdAt": "2025-09-20T21:02:48.662Z"
+  },
+  {
+    "id": 8,
+    "title": "aa",
+    "body": "sd",
+    "tags": [
+      "kkd"
+    ],
+    "createdAt": "2025-09-20T21:09:04.439Z"
+  },
+  {
+    "id": 9,
+    "title": "new ",
+    "body": "old",
+    "tags": [
+      "asb"
+    ],
+    "createdAt": "2025-09-20T21:09:46.889Z"
   }
 ]

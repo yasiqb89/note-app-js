@@ -9,7 +9,7 @@ class Note {
         this.createdAt = new Date(createdAt);
     }
 
-    getInfo() {
+    get info() {
         return `${this.id}. ${this.title} [${this.tags.join(", ")}]`
     }
 

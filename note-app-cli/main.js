@@ -1,4 +1,4 @@
-import { askQuestion, createNote, closePrompt } from './cli/cliHelper.js';
+import { askQuestion, createNote, closePrompt, listAllNotes } from './cli/cliHelper.js';
 
 
 async function showMenu() {
@@ -11,7 +11,7 @@ async function showMenu() {
     console.log('6. Delete Note');
     console.log('7. Exit');
 
-    const choice = await askQuestion('Choose and option: ');
+    const choice = await askQuestion('Choose an option: ');
 
     switch (choice.trim()) {
         case '1':
