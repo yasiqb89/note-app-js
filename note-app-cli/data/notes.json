@@ -63,23 +63,5 @@
       "a"
     ],
     "createdAt": "2025-09-20T21:02:48.662Z"
-  },
-  {
-    "id": 8,
-    "title": "aa",
-    "body": "sd",
-    "tags": [
-      "kkd"
-    ],
-    "createdAt": "2025-09-20T21:09:04.439Z"
-  },
-  {
-    "id": 9,
-    "title": "new ",
-    "body": "old",
-    "tags": [
-      "asb"
-    ],
-    "createdAt": "2025-09-20T21:09:46.889Z"
   }
 ]

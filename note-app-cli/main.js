@@ -1,4 +1,4 @@
-import { askQuestion, createNote, closePrompt, listAllNotes } from './cli/cliHelper.js';
+import { askQuestion, createNote, closePrompt, listAllNotes, viewNoteDetails, searchNotes, filterNotesByTag, deleteNote } from './cli/cliHelper.js';
 
 
 async function showMenu() {

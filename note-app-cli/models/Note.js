@@ -10,7 +10,7 @@ class Note {
     }
 
     get info() {
-        return `${this.id}. ${this.title} [${this.tags.join(", ")}]`
+        return `${this.id}. ${this.title} [${this.tags.join(",")}]`
     }
 
     matchesKeyword(keyword) {
@@ -20,7 +20,7 @@ class Note {
         );
     }
 
-    hastTag(tag) {
+    hasTag(tag) {
         return this.tags.includes(tag);
     }
 
