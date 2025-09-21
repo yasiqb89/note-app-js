@@ -1,14 +1,21 @@
-# Note App CLI
+# 📝 Note-Taking CLI
 
-A lightweight command-line note-taking utility that stores notes in a local JSON file. Create quick notes with tags, review everything you’ve captured, and extend the CLI to support richer workflows.
+A simple **Command Line Interface (CLI) Note-Taking Application** built with modern JavaScript (ES6+) and Mock Api.  
+This project demonstrates **core JS concepts** like classes, async/await, file operations, and modular structure — while providing practical note management.
 
-## Features
+---
 
-- Interactive prompts to create notes with title, body, and comma-separated tags.
-- Persistent storage in `data/notes.json`, using a simple ID generator seeded from existing notes.
-- Menu-driven entry point (`main.js`) that lists planned actions such as viewing, searching, filtering, and deleting notes.
-- `Note` model encapsulating note metadata plus helpers like the `info` getter.
-- JSON-backed API (`api/noteApi.js`) for loading, saving, and appending notes via async/await.
+## 🚀 Features
+- Create a new note (with title, body, and tags)
+- List all notes (quick summaries)
+- View detailed note by ID
+- Search notes by keyword (title & body)
+- Filter notes by tag
+- Update existing notes (edit title, body, tags)
+- Delete notes
+- Persistent storage in `notes.json`
+
+---
 
 ## Requirements
 
@@ -32,7 +39,7 @@ Current commands:
 
 Menu items 3–6 are scaffolds for future work (view details, search, filter, delete). Implement the corresponding helpers in `cli/cliHelper.js` and wire them into `main.js` as you expand the app.
 
-## Project Structure
+## 📂 Project Structure
 
 note-app-cli/
 ├── api/
