@@ -137,6 +137,5 @@ export async function deleteNote() {
 
     notes.splice(index, 1);
     await saveNotes(notes);
-
     console.log(`Note with ID ${id} deleted successfully!`);
 }
