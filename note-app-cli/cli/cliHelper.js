@@ -105,7 +105,7 @@ export async function filterNotesByTag() {
     const matchingNotes = notes.filter(note => note.hasTag(tag));
 
     if (matchingNotes.length <= 0) {
-        console.log(`No matching notes found with keyword: ${keyword}`);
+        console.log(`No matching notes found with tag: ${tag}`);
         return;
     }
 
@@ -116,6 +116,7 @@ export async function filterNotesByTag() {
 
 
 export async function deleteNote() {
+
     const notes = await getAllNotes();
 
     console.log("\nList of Notes:");
@@ -138,4 +139,48 @@ export async function deleteNote() {
     notes.splice(index, 1);
     await saveNotes(notes);
     console.log(`Note with ID ${id} deleted successfully!`);
+}
+
+export async function updateNote() {
+
+    const notes = await getAllNotes();
+
+    if (notes.length <= 0) {
+        console.log("No notes available to update");
+        return;
+    }
+
+    console.log("\nList of Notes:");
+    notes.forEach(note => console.log(note.info));
+
+    const id = await askQuestion('Enter note ID to update: ');
+    const note = notes.find(note => note.id === Number(id));
+
+    if (!note) {
+        console.log(`No note found with ID ${id}`);
+        return;
+    }
+
+    console.log("\nNote Details:");
+    console.log(`Current Title: ${note.title}`);
+    console.log(`Current Body: ${note.body}`);
+    console.log(`Current Tags: ${note.tags.length > 0 ? note.tags.join(", ") : "None"}`);
+
+    const newTitle = await askQuestion("Enter new Title (leave blank to keep current): ");
+    const newBody = await askQuestion("Enter new Body (leave blank to keep current): ");
+    const newTags = await askQuestion("Enter new tags (comma-separated, leave blank to keep current): ");
+
+    note.title = newTitle || note.title;
+    note.body = newBody || note.body;
+
+    if (newTags.trim().length > 0) {
+        note.tags = newTags
+            .split(",")
+            .map(t => t.trim())
+            .filter(t => t.length > 0);
+    }
+
+    await saveNotes(notes);
+    console.log(`Note with ID ${id} updated successfully!`);
+
 }
